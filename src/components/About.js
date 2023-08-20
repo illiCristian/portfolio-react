@@ -10,7 +10,7 @@ const About = () => {
   });
   return (
     <section ref={ref} id="about" className="section">
-      <div className="container mx-auto">
+      <div className="container mx-3 sm:mx-auto">
         <div className="flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 h-[80vh] lg:h-screen">
           {/* img */}
           <motion.div
@@ -51,7 +51,7 @@ const About = () => {
                   {inView ? <CountUp start={0} end={30} duration={3} /> : null}
                 </div>
                 <div className="font-primary text-sm tracking-[2px]">
-                  Proojetcs <br />
+                  Projetcs <br />
                   Completed
                 </div>
               </div>
@@ -66,9 +66,11 @@ const About = () => {
               </div>
             </div>
             <div className="flex gap-x-6 items-center">
-              <button className="btn btn-lg">Contact me</button>
-              <a href="#" className="text-gradient btn-link">
-                My Portfolio
+              <button className="btn btn-lg text-[#0F1624] font-extrabold ">
+                Contact me
+              </button>
+              <a href="#" className=" btn-link font-bold text-2xl">
+                Mi portfolio
               </a>
             </div>
           </motion.div>

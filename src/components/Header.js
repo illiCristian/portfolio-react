@@ -4,7 +4,7 @@ import { DiCssdeck } from "react-icons/di";
 
 const Header = () => {
   return (
-    <header className="py-3">
+    <header className="py-3 lg:px-32 px-20 ">
       <div className="container mx-auto">
         <div className="flex justify-between items-center">
           <a href="">

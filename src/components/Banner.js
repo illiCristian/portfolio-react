@@ -11,8 +11,8 @@ const Banner = () => {
   return (
     <section id="home" className="min-h-[78vh] flex items-center">
       <div className="p-10 lg:px-32 mx-auto lg:mx-0">
-        <div className="lg:grid lg:grid-cols-2 lg:gap-x-12">
-          <div className="text-center font-secondary lg:text-left max-h-36">
+        <div className="lg:grid lg:grid-cols-2 lg:gap-x-12 relative">
+          <div className="relative z-50 text-center font-secondary lg:text-left max-h-36">
             <motion.h1
               variants={fadeIn("up", 0.3)}
               initial="hidden"
@@ -60,8 +60,13 @@ const Banner = () => {
                 viewport={{ once: false, amount: 0.7 }}
                 className="flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0 lg:flex-row flex-col gap-4"
               >
-                <button className="btn btn-lg">Contact me</button>
-                <a href="#" className="text-gradient btn-link">
+                <button className="btn btn-lg text-[#0F1624] font-extrabold whitespace-nowrap ">
+                  Contact me
+                </button>
+                <a
+                  href="#"
+                  className=" whitespace-nowrap btn-link font-bold text-2xl"
+                >
                   Mi portfolio
                 </a>
                 <motion.div
@@ -94,6 +99,8 @@ const Banner = () => {
             variants={fadeIn("down", 0.3)}
             initial="hidden"
             whileInView={"show"}
+            viewport={{ once: false, amount: 0.7 }}
+            className="relative z-10"
           >
             <BackgroundAnimation />
           </motion.div>
