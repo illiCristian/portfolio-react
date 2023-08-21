@@ -9,16 +9,19 @@ import BackgroundAnimation from "./BackgrooundAnimation/BackgroundAnimation";
 const Banner = () => {
   /*  */
   return (
-    <section id="home" className="min-h-[78vh] flex items-center">
-      <div className="p-10 lg:px-32 mx-auto lg:mx-0">
+    <section
+      id="home"
+      className="min-h-[78vh] flex mt-5 sm:mt-0 sm:items-center "
+    >
+      <div className="container lg:p-10 lg:px-32 mx-auto">
         <div className="lg:grid lg:grid-cols-2 lg:gap-x-12 relative">
-          <div className="relative z-50 text-center font-secondary lg:text-left max-h-36">
+          <div className="relative z-50  font-secondary lg:text-left max-h-36">
             <motion.h1
               variants={fadeIn("up", 0.3)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="text-[50px] font-bold leading-[0.8] lg:text-[110px] whitespace-nowrap"
+              className="text-[50px] font-bold leading-[0.8] lg:text-[110px] whitespace-nowrap text-center lg:text-left"
             >
               Cristian <span>Illi</span>
             </motion.h1>
@@ -27,7 +30,7 @@ const Banner = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="mb-6 text-[36px] lg:text-[60px] font-secondary uppercase leading-[1] whitespace-nowrap"
+              className="mb-6 text-[20px] text-center lg:text-[60px] font-secondary uppercase leading-[1] whitespace-nowrap"
             >
               <span className=" text-white mr-4">I am </span>
               <TypeAnimation
@@ -43,12 +46,13 @@ const Banner = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="mb-8 max-w-lg mx-auto lg:mx-0"
+              className="sm:mb-8 text-base sm:text-xl mb-2 max-w-lg mx-auto lg:mx-0 sm:whitespace-nowrap"
             >
               Full-Stack developer with knowledge in HTML, CSS and JavaScript,
+              <br />
               handling technologies such as React JS, NextJs, Typescript, SaSS,
-              Handlebars, Tailwind, I have the ability to build responsive web
-              pages (Mobile First).
+              Handlebars, Tailwind, <br />I have the ability to build responsive
+              web pages (Mobile First).
               <br /> In backend I have knowledge in C, Node js, express, Nest
               js, Mongodb, WebSockets, Swagger
             </motion.p>
@@ -64,7 +68,7 @@ const Banner = () => {
                   Contact me
                 </button>
                 <a
-                  href="#"
+                  href="/"
                   className=" whitespace-nowrap btn-link font-bold text-2xl"
                 >
                   Mi portfolio

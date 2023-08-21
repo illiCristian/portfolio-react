@@ -4,10 +4,10 @@ import { DiCssdeck } from "react-icons/di";
 
 const Header = () => {
   return (
-    <header className="py-3 lg:px-32 px-20 ">
+    <header className="py-3 lg:px-32 px-10 ">
       <div className="container mx-auto">
         <div className="flex justify-between items-center">
-          <a href="">
+          <a href="/">
             <DiCssdeck size="2rem" /> <span>Portfolio</span>
           </a>
           <button className="btn btn-sm">Work with me</button>
