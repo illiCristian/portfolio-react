@@ -6,30 +6,31 @@ import { fadeIn } from "../variants";
 /* services Data */
 const services = [
   {
-    name: "UI/UX Design",
+    name: "Web Development",
     description:
-      "lorem Ipsum is simply dummy text of Lorem Ipsum. Lorem Ipsum is a utility tool that helps us transform   ",
-    link: "Learn more",
+      "I specialize in building responsive and user-friendly websites tailored to your unique needs. Whether you need a personal blog, an e-commerce platform, or a corporate website, I can bring your vision to life.",
+    link: "View my work",
   },
   {
-    name: "Frontend Development",
+    name: "Mobile App Development",
     description:
-      "lorem Ipsum is simply dummy text of Lorem Ipsum. Lorem Ipsum is a utility tool that helps us transform   ",
-    link: "Learn more",
+      "Turn your app idea into reality with my mobile app development services. I create native and cross-platform apps for both iOS and Android, ensuring a seamless user experience.",
+    link: "See my apps",
   },
   {
-    name: "Backend Development",
+    name: "E-commerce Solutions",
     description:
-      "lorem Ipsum is simply dummy text of Lorem Ipsum. Lorem Ipsum is a utility tool that helps us transform   ",
-    link: "Learn more",
+      "Boost your online sales with my e-commerce solutions. I can set up, customize, and optimize your online store, integrating secure payment gateways and advanced shopping features.",
+    link: "Explore e-commerce",
   },
   {
-    name: "Testing",
+    name: "Quality Assurance",
     description:
-      "lorem Ipsum is simply dummy text of Lorem Ipsum. Lorem Ipsum is a utility tool that helps us transform   ",
-    link: "Learn more",
+      "I prioritize the quality and reliability of your software products. Through rigorous testing and QA processes, I ensure that your applications are bug-free and perform flawlessly.",
+    link: "Learn about QA",
   },
 ];
+
 const Services = () => {
   return (
     <section id="services" className="section p-4">

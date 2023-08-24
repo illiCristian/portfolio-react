@@ -69,9 +69,7 @@ const About = () => {
               <button className="btn btn-lg text-[#0F1624] font-extrabold ">
                 Contact me
               </button>
-              <a href="#" className=" btn-link font-bold text-2xl">
-                Mi portfolio
-              </a>
+              <span className=" btn-link font-bold text-2xl">Mi portfolio</span>
             </div>
           </motion.div>
         </div>

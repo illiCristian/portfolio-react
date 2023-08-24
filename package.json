@@ -37,6 +37,7 @@
     ]
   },
   "devDependencies": {
+    "@types/node": "^20.5.1",
     "framer-motion": "^8.5.4",
     "react-countup": "^6.4.0",
     "react-icons": "^4.7.1",

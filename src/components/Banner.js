@@ -46,7 +46,7 @@ const Banner = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="sm:mb-8 text-base sm:text-xl mb-2 max-w-lg mx-auto lg:mx-0 sm:whitespace-nowrap"
+              className="mb-8 text-[18px] sm:text-[24px] max-w-lg mx-auto lg:mx-0 sm:whitespace-nowrap"
             >
               Full-Stack developer with knowledge in HTML, CSS and JavaScript,
               <br />
@@ -64,15 +64,24 @@ const Banner = () => {
                 viewport={{ once: false, amount: 0.7 }}
                 className="flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0 lg:flex-row flex-col gap-4"
               >
-                <button className="btn btn-lg text-[#0F1624] font-extrabold whitespace-nowrap ">
+                <button
+                  className="btn btn-lg text-[#0F1624] font-extrabold whitespace-nowrap"
+                  onClick={() => {
+                    const email = "illicristianfabian@gmail.com";
+                    const subject = "Contact";
+                    window.location.href = `mailto:${email}?subject=${encodeURIComponent(
+                      subject
+                    )}`;
+                  }}
+                >
                   Contact me
                 </button>
-                <a
-                  href="/"
+                <span
+                 
                   className=" whitespace-nowrap btn-link font-bold text-2xl"
                 >
                   Mi portfolio
-                </a>
+                </span>
                 <motion.div
                   variants={fadeIn("up", 0.7)}
                   initial="hidden"
